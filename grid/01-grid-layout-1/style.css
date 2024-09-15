@@ -5,6 +5,10 @@ html {
 }
 
 .container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(9, 80px);
+  gap: 10px;
   text-align: center;
   height: 100%;
   padding: 16px;
@@ -22,22 +26,32 @@ html {
 
 .header {
   background-color: #006157;
+  grid-row: 1 / 2;
+  grid-column: 1 / 13;
 }
 
 .sidebar {
   background-color: #005B94;
+  grid-row: 2 / 8;
+  grid-column: 1 / 4;
 }
 
 .nav {
   background-color: #642cde;
+  grid-row: 2 / 3;
+  grid-column: 4 / 13;
 }
 
 .article {
   background-color: #7E1DC3;
+  grid-row: 3 / 8;
+  grid-column: 4 / 13;
 }
 
 .footer {
   background-color: #393f4d;
+  grid-row: 8 / 9;
+  grid-column: 1 / 13;
 }
 
 .article p {
